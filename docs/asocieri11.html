@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Asocieri 1-1 · This is the title for my website</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# &lt;span style=&quot;color:#b45f06&quot;&gt;Sumar&lt;/span&gt;"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Asocieri 1-1 · This is the title for my website"/><meta property="og:type" content="website"/><meta property="og:url" content="lilizahar.github.io/sinapsi/"/><meta property="og:description" content="# &lt;span style=&quot;color:#b45f06&quot;&gt;Sumar&lt;/span&gt;"/><meta property="og:image" content="lilizahar.github.io/sinapsi/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="lilizahar.github.io/sinapsi/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/sinapsi/img/favicon-96x96.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="lilizahar.github.io/sinapsi/blog/atom.xml" title="This is the title for my website Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="lilizahar.github.io/sinapsi/blog/feed.xml" title="This is the title for my website Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/sinapsi/js/scrollSpy.js"></script><link rel="stylesheet" href="/sinapsi/css/main.css"/><script src="/sinapsi/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/sinapsi/"><img class="logo" src="/sinapsi/img/favicon-96x96.png" alt="This is the title for my website"/><h2 class="headerTitleWithLogo">This is the title for my website</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/sinapsi/docs/Sinapsi" target="_self">Sinapsi</a></li><li class=""><a href="/sinapsi/docs/ESignature" target="_self">ESignature</a></li><li class=""><a href="/sinapsi/help" target="_self">Help Page_h3</a></li><li class=""><a href="/sinapsi/blog/" target="_self">Blog_h4</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Sinapsi Documentation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Sinapsi Documentation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/sinapsi/docs/Sinapsi">About Sinapsi</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/activareaUnuiObiect">Activarea unui obiect</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/additionalLookup">Additional Lookup</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/atributIerarhic">Atribut ierarhic pe clasa</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/sinapsi/docs/asocieri11">Asocieri 1-1</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/caching">Caching</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/clonareaUneiInstante">Clonarea unei instanțe</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/colectii">Colecții</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/consistentaBazeiDeDate">Consistența bazei de date</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/discriminantPeClase">Discriminant pe clase</a></li><li class="navListItem"><a class="navItem" href="/sinapsi/docs/constrangeri">Constrângeri</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Asocieri 1-1</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="span-stylecolorb45f06sumarspan"></a><a href="#span-stylecolorb45f06sumarspan" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span style="color:#b45f06">Sumar</span></h1>
+<p>Asocierile de tip 1 - 1 între 2 obiecte se reprezinta printr-o entitate/tabela ajutătoare ce contine cate o referință către fiecare din cele 2 tipuri de obiect.
+De exemplu, un scscscNews poate avea o singura legătură cu un Media ( Media poate conține mai multe Media Items), iar la randul lui Media respectiv poate avea legatura doar cu acel News astfel avem definită o relație de tip 1 - 1.</p>
+<h3><a class="anchor" aria-hidden="true" id="exemplu"></a><a href="#exemplu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exemplu</h3>
+<p>Daca avem relatia:</p>
+<table>
+<thead>
+<tr><th>N2N_Relation</th><th style="text-align:center">N2N_Left</th><th style="text-align:right">N2N_Right</th></tr>
+</thead>
+<tbody>
+<tr><td><code>Local.Objects.News-WebParts.Objects.Media.Media-Media</code></td><td style="text-align:center">2</td><td style="text-align:right">49</td></tr>
+</tbody>
+</table>
+<p>Nu poate exista nici o alta relație între același News (Id 2 - N2N_Left) și alt Media (diferit de Id 49 - N2N_Right ) și nici o alta relație între acel Media și alt News.</p>
+<p>In clasa News vom avea:</p>
+<pre><code class="hljs">[<span class="hljs-meta">Q.Object.Attributes.One2One(Element = Elements.Media)</span>]
+<span class="hljs-keyword">public</span> WebParts.Objects.Media.Media Media
+{
+     <span class="hljs-keyword">get</span>
+     {
+          <span class="hljs-keyword">return</span> GetOne2One&lt;WebParts.Objects.Media.Media&gt;(Elements.Media);
+     }
+     <span class="hljs-keyword">set</span>
+     {
+          SetOne2One&lt;WebParts.Objects.Media.Media&gt;(Elements.Media, <span class="hljs-keyword">value</span>);
+     }
+}
+</code></pre>
+<p><img src="/img/1La1Col.png" alt="ActivateAnObject"></p>
+<p>Relatiile 1 - 1 sunt salvate in tabela <strong>sinapsi.QD_N2N</strong></p>
+<h4><a class="anchor" aria-hidden="true" id="exemplu-1"></a><a href="#exemplu-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exemplu</h4>
+<p>Un News care are doua poze atașate la el.
+<code>sinapsi.QD_N2N</code></p>
+<table>
+<thead>
+<tr><th>N2N_Relation</th><th style="text-align:center">N2N_Left</th><th style="text-align:right">N2N_Right</th></tr>
+</thead>
+<tbody>
+<tr><td><code>Local.Objects.News-WebParts.Objects.Media.Media-Media</code></td><td style="text-align:center">2</td><td style="text-align:right">49</td></tr>
+</tbody>
+</table>
+<p>N2N_Relation                                           N2N_Left   N2N_Right
+Local.Objects.News-WebParts.Objects.Media.Media-Media        2          49</p>
+<p><strong>N2N_Relation</strong>:</p>
+<ul>
+<li>Local.Objects.News - unde folosim : <strong>N2N_Left</strong></li>
+<li>WebParts.Objects.Media.Media- de unde folosim: <strong>N2N_Right</strong></li>
+<li>Media - ce folosim</li>
+</ul>
+<p>Folosim în obiectul cu Id-ul 2 ( coloana N2N_Left) din tabela sinapsi.L_News, Elementele cu Id- urile 72 și 77 (din tabela sinapsi.Q_W_MediaItem) din Media cu Id-ul 49 (coloana N2N_Right) din tabela sinapsi.Q_W_Media.</p>
+<p>Interogări baza de date:</p>
+<ul>
+<li><p><code>select * from sinapsi.QD_N2N</code></p></li>
+<li><p><code>select * from sinapsi.L_News</code></p></li>
+<li><p><code>select * from sinapsi.Q_W_Media</code></p></li>
+<li><p><code>select * from sinapsi.Q_W_MediaItem</code></p></li>
+<li><p><code>select * from sinapsi.Q_W_MediaItemType</code></p></li>
+</ul>
+<p>Rezultate:</p>
+<p><img src="/img/one2oneInSql.png" alt="ActivateAnObject"></p>
+<pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Model</span> : <span class="hljs-type">Foundation.MVC.Model</span></span>
+{
+     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> void ConfigureViews()
+     {
+         AddRootView();
+          ((News)(Root)).LocalizedText.AddModelViews(<span class="hljs-keyword">this</span>,                
+                WebParts.Objects.LocalizedText.EditMode.All); <span class="hljs-comment">//Localizare</span>
+
+         ((News)(Root)).Attachments.AddModelView(<span class="hljs-keyword">this</span>, <span class="hljs-literal">true</span>); <span class="hljs-comment">//Atasamente</span>
+
+           ((News)(Root)).Media.AddModelView(<span class="hljs-keyword">this</span>, <span class="hljs-literal">true</span>); <span class="hljs-comment">//Media</span>
+     }
+}
+</code></pre>
+<p>Adăugăm în Model RootView:</p>
+<ul>
+<li>View-ul pentru Localizare</li>
+<li>View-ul pentru Atasamente</li>
+<li>View-ul pentru Media</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/sinapsi/docs/atributIerarhic"><span class="arrow-prev">← </span><span>Atribut ierarhic pe clasa</span></a><a class="docs-next button" href="/sinapsi/docs/caching"><span>Caching</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/sinapsi/" class="nav-home"><img src="/sinapsi/img/favicon-96x96.png" alt="This is the title for my website" width="66" height="58"/></a><div><h5>Docs</h5><a href="/sinapsi/docs/doc1.html">Getting Started (or other categories)</a><a href="/sinapsi/docs/doc2.html">Guides (or other categories)</a><a href="/sinapsi/docs/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/sinapsi/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/sinapsi/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/sinapsi/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2021 Sinapsi</section></footer></div></body></html>
