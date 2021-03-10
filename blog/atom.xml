@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>lilizahar.github.io/sinapsi/blog</id>
-    <title>This is the title for my website Blog</title>
+    <title>Sinapsi Blog</title>
     <updated>2017-10-24T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="lilizahar.github.io/sinapsi/blog"/>
-    <subtitle>The best place to stay up-to-date with the latest This is the title for my website news and events.</subtitle>
-    <logo>lilizahar.github.io/sinapsi/img/favicon-96x96.png</logo>
+    <subtitle>The best place to stay up-to-date with the latest Sinapsi news and events.</subtitle>
+    <logo>lilizahar.github.io/sinapsi/img/logo.png</logo>
     <rights>Copyright © 2021 Sinapsi</rights>
     <entry>
         <title type="html"><![CDATA[New Version 1.0.0]]></title>
